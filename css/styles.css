@@ -69,3 +69,17 @@ footer li {
     margin-right: 10px;
     padding: 0 10px;
 }
+
+
+
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    font-family: 'Times New Roman', Times, serif; /* Caslon is not a web-safe font, so using a similar serif font */
+}
+
+/* Rest of your CSS rules here */

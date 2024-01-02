@@ -1,161 +1,16 @@
-<section class="my-ux-skills">
-    <!-- Section Header -->
-    <h1>My UX Skills</h1> 
-    
-
-    <!-- Flex Container for Skills -->
-    <div class="skills-container">
-
-        <!-- Flex Child 1: Skill 1 -->
-        <div class="skill">
-            <!-- Skill Image -->
-            <img src="Images/UXDesign.jpg" alt="Skill 1" width="150" height="150">
-
-            <!-- Skill Title -->
-            <h1>UI/UX Design</h1>
-
-            <!-- Skill Description -->
-            <p>At the core of my skills is a passion for crafting visually stunning and intuitively functional user interfaces. The fusion of fine art and technology defines my approach. From wireframes to color schemes, I bring a meticulous eye for detail. My design philosophy goes beyond aesthetics; it's about creating meaningful connections and guiding users through engaging experiences, leaving a lasting impression.</p>
-        </div>
-
-        <!-- Flex Child 2: Skill 2 -->
-        <div class="skill">
-            <!-- Skill Image -->
-            <img src="Images/Prototyping.jpg" alt="Skill 2"  width="150" height="150">
-
-            <!-- Skill Title -->
-            <h1>Prototyping</h1>
-
-            <!-- Skill Description -->
-            <p>Prototyping is the pulse of my design process. With a seamless transition from conceptualization to interactive prototypes, I visualize user flows and communicate effectively with stakeholders. Prototyping isn't just a stage; it's a dynamic tool breathing life into ideas and paving the way for user-friendly digital journeys.</p>
-        </div>
-
-        <!-- Flex Child 3: Skill 3 -->
-        <div class="skill">
-            <!-- Skill Image -->
-            <img src="Images/UserResearch.jpg" alt="Skill 3" width="150" height="150">
-
-            <!-- Skill Title -->
-            <h1>User Research</h1>
-
-            <!-- Skill Description -->
-            <p>My expertise in user research, honed over 12 years as a graphic designer, allows me to deeply understand user behavior. From insightful interviews to usability testing, I ensure a profound connection with the end user, shaping designs that resonate.</p>
-        </div>
-        
-    </div> <!-- End of Skills Container -->
-
-</section> <!-- End of My UX Skills Section -->
-
-<div class="vertical-line line6">
-    <div class="line-text">&lt;div&gt; tag</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Vertical Lines with Text</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
 
-<style>
 
-    body {
-        background-color: rgb(81, 81, 81); /* Use any shade of grey you prefer */
-        margin: 0; /* Remove default margin */
-    }
 
-    .my-ux-skills {
-        position: relative;
-        border: 1px solid rgb(255, 0, 0);
-        padding: 10px; /* Optional: Add padding to make the border visible */
-        text-align: center; /* Center the text within the section */
-        margin: 10px; /* Add margin for spacing */
-    }
 
-    .line-to-container {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-
-    /* Additional styling for better visibility */
-    .skills-container {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        border: 1px solid rgb(0, 0, 255); /* Add a border for the skills container */
-        padding: 10px; /* Optional: Add padding to make the border visible */
-    }
-
-    .line-to-skill-container {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-
-    .skill {
-        border: 1px solid rgb(0, 255, 0);
-        padding: 10px; /* Optional: Add padding to make the border visible */
-        margin: 10px; /* Optional: Add margin for spacing */
-        position: relative;
-    }
-
-    .line-to-skill {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-
-    /* New styles for additional boxes */
-    .skill img {
-        border: 1px solid rgb(255, 255, 0); /* Add a border around the image */
-        width: 200px; /* Set a specific width for the image */
-        height: 150px; /* Set a specific height for the image */
-        position: relative;
-    }
-
-    .line-to-img {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-
-    .skill h1 {
-        border: 1px solid rgb(0, 255, 255); /* Add a border around the heading "User Research" */
-        padding: 5px; /* Optional: Add padding to make the border visible */
-        position: relative;
-    }
-
-    .line-to-h1 {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-
-    .skill p {
-        border: 1px solid rgb(255, 0, 255); /* Add a border around the paragraph */
-        padding: 5px; /* Optional: Add padding to make the border visible */
-        position: relative;
-    }
-
-    .line-to-p {
-        position: absolute;
-        top: 0; /* Position at the top of the container */
-        left: 50%; /* Position in the middle of the container */
-        border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-        height: 100%; /* Adjust the height of the line to cover the entire container */
-        transform: translateX(-50%); /* Center the line horizontally */
-    }
-</style>
 
 
 <!DOCTYPE html>
@@ -169,8 +24,101 @@
             position: relative;
             margin: 0;
             padding: 0;
+            background-color: rgb(81, 81, 81); /* Use any shade of grey you prefer */
         }
 
+        .my-ux-skills {
+            position: relative;
+            border: 1px solid rgb(255, 0, 0);
+            padding: 10px; /* Optional: Add padding to make the border visible */
+            text-align: center; /* Center the text within the section */
+            margin: 10px; /* Add margin for spacing */
+        }
+
+   
+
+        /* Additional styling for better visibility */
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            border: 1px solid rgb(0, 0, 255); /* Add a border for the skills container */
+            padding: 10px; /* Optional: Add padding to make the border visible */
+        }
+
+        .line-to-skill-container {
+            position: absolute;
+            top: 0; /* Position at the top of the container */
+            left: 50%; /* Position in the middle of the container */
+            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+            height: 100%; /* Adjust the height of the line to cover the entire container */
+            transform: translateX(-50%); /* Center the line horizontally */
+        }
+
+        .skill {
+            border: 1px solid rgb(0, 255, 0);
+            padding: 10px; /* Optional: Add padding to make the border visible */
+            margin: 10px; /* Optional: Add margin for spacing */
+            position: relative;
+        }
+
+        .line-to-skill {
+            position: absolute;
+            top: 0; /* Position at the top of the container */
+            left: 50%; /* Position in the middle of the container */
+            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+            height: 100%; /* Adjust the height of the line to cover the entire container */
+            transform: translateX(-50%); /* Center the line horizontally */
+        }
+
+        /* New styles for additional boxes */
+        .skill img {
+            border: 1px solid rgb(255, 255, 0); /* Add a border around the image */
+            width: 200px; /* Set a specific width for the image */
+            height: 150px; /* Set a specific height for the image */
+            position: relative;
+        }
+
+        .line-to-img {
+            position: absolute;
+            top: 0; /* Position at the top of the container */
+            left: 50%; /* Position in the middle of the container */
+            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+            height: 100%; /* Adjust the height of the line to cover the entire container */
+            transform: translateX(-50%); /* Center the line horizontally */
+        }
+
+        .skill h3 {
+            border: 1px solid rgb(0, 255, 255); /* Add a border around the heading "User Research" */
+            padding: 5px; /* Optional: Add padding to make the border visible */
+            position: relative;
+        }
+
+        .line-to-h3 {
+            position: absolute;
+            top: 0; /* Position at the top of the container */
+            left: 50%; /* Position in the middle of the container */
+            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+            height: 100%; /* Adjust the height of the line to cover the entire container */
+            transform: translateX(-50%); /* Center the line horizontally */
+        }
+
+        .skill p {
+            border: 1px solid rgb(255, 0, 255); /* Add a border around the paragraph */
+            padding: 5px; /* Optional: Add padding to make the border visible */
+            position: relative;
+        }
+
+        .line-to-p {
+            position: absolute;
+            top: 0; /* Position at the top of the container */
+            left: 50%; /* Position in the middle of the container */
+            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+            height: 100%; /* Adjust the height of the line to cover the entire container */
+            transform: translateX(-50%); /* Center the line horizontally */
+        }
+
+        /* Colored Vertical Lines with Text */
         .vertical-line {
             position: absolute;
             width: 1px;
@@ -184,7 +132,6 @@
         .line5 { left: 450px; background-color: rgba(255, 255, 255, 0); top: -615px; }
         .line6 { left: 550px; background-color: rgb(0, 0, 255); top: 530px; }
 
-
         .line-text {
             position: absolute;
             bottom: 0;
@@ -197,6 +144,48 @@
     </style>
 </head>
 <body>
+    <!-- My UX Skills Section -->
+    <section class="my-ux-skills">
+        <!-- Section Header -->
+        <h3>My UX Skills</h3>
+
+        <!-- Flex Container for Skills -->
+        <div class="skills-container">
+            <!-- Flex Child 1: Skill 1 -->
+            <div class="skill">
+                <!-- Skill Image -->
+                <img src="Images/UXDesign.jpg" alt="Skill 1" width="150" height="150">
+                <!-- Skill Title -->
+                <h3>UI/UX Design</h3>
+                <!-- Skill Description -->
+                <p>At the core of my skills is a passion for crafting visually stunning and intuitively functional user interfaces. The fusion of fine art and technology defines my approach. From wireframes to color schemes, I bring a meticulous eye for detail. My design philosophy goes beyond aesthetics; it's about creating meaningful connections and guiding users through engaging experiences, leaving a lasting impression.</p>
+            </div>
+
+            <!-- Flex Child 2: Skill 2 -->
+            <div class="skill">
+                <!-- Skill Image -->
+                <img src="Images/Prototyping.jpg" alt="Skill 2"  width="150" height="150">
+                <!-- Skill Title -->
+                <h3>Prototyping</h3>
+                <!-- Skill Description -->
+                <p>Prototyping is the pulse of my design process. With a seamless transition from conceptualization to interactive prototypes, I visualize user flows and communicate effectively with stakeholders. Prototyping isn't just a stage; it's a dynamic tool breathing life into ideas and paving the way for user-friendly digital journeys.</p>
+            </div>
+
+            <!-- Flex Child 3: Skill 3 -->
+            <div class="skill">
+                <!-- Skill Image -->
+                <img src="Images/UserResearch.jpg" alt="Skill 3" width="150" height="150">
+                <!-- Skill Title -->
+                <h3>User Research</h3>
+                <!-- Skill Description -->
+                <p>My expertise in user research, honed over 12 years as a graphic designer, allows me to deeply understand user behavior. From insightful interviews to usability testing, I ensure a profound connection with the end user, shaping designs that resonate.</p>
+            </div>
+        </div> <!-- End of Skills Container -->
+
+        <!-- Line to Flex Container -->
+        <div class="line-to-container"></div>
+    </section> <!-- End of My UX Skills Section -->
+
     <!-- Colored Vertical Lines with Text -->
     <div class="vertical-line line1">
         <div class="line-text">3 &lt;div&gt; tags</div>
@@ -213,11 +202,15 @@
     <div class="vertical-line line5">
         <div class="line-text">&lt;h1 tag&gt; tag</div>
     </div>
+    <div class="vertical-line line6">
+        <div class="line-text">&lt;div&gt; tag</div>
+    </div>
 
-
-    <p style="color: white;">note: Annotations in white text</p>
-
-
-    
+    <p style="color: white;">note: Annotations in white text. red box=section tag</p>
 </body>
 </html>
+
+
+
+
+
