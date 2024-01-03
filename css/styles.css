@@ -86,4 +86,52 @@ body {
 
 
 
+/* Existing CSS code */
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, auto); /* Adjust the number of rows and row height as needed */
+    gap: 20px; /* Add gap between grid items */
+}
+
+.grid-item {
+    grid-area: auto; /* Change grid area to auto, allowing the items to be placed in the next available area */
+}
+
+/* New styles for additional boxes */
+/* ... (other styles) ... */
+
+/* Add the new flex container styles */
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 33%;
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    /* Update flex direction for mobile views */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Adjust width of flex children to take up 100% width */
+    .flex-container > div {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    /* Adjust grid-template-areas, grid-template-rows, and grid-template-columns for mobile views */
+    .myWork {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; /* Adjust as needed */
+        grid-template-areas: "myArea"; /* Adjust as needed */
+    }
+}
+
 
