@@ -4,153 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colored Vertical Lines with Text</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colored Vertical Lines with Text</title>
-    <style>
-        body {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(81, 81, 81); /* Use any shade of grey you prefer */
-        }
-
-        .my-ux-skills {
-            position: relative;
-            border: 1px solid rgb(255, 0, 0);
-            padding: 10px; /* Optional: Add padding to make the border visible */
-            text-align: center; /* Center the text within the section */
-            margin: 10px; /* Add margin for spacing */
-        }
-
-   
-
-        /* Additional styling for better visibility */
-        .skills-container {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            border: 1px solid rgb(0, 0, 255); /* Add a border for the skills container */
-            padding: 10px; /* Optional: Add padding to make the border visible */
-        }
-
-        .line-to-skill-container {
-            position: absolute;
-            top: 0; /* Position at the top of the container */
-            left: 50%; /* Position in the middle of the container */
-            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-            height: 100%; /* Adjust the height of the line to cover the entire container */
-            transform: translateX(-50%); /* Center the line horizontally */
-        }
-
-        .skill {
-            border: 1px solid rgb(0, 255, 0);
-            padding: 10px; /* Optional: Add padding to make the border visible */
-            margin: 10px; /* Optional: Add margin for spacing */
-            position: relative;
-        }
-
-        .line-to-skill {
-            position: absolute;
-            top: 0; /* Position at the top of the container */
-            left: 50%; /* Position in the middle of the container */
-            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-            height: 100%; /* Adjust the height of the line to cover the entire container */
-            transform: translateX(-50%); /* Center the line horizontally */
-        }
-
-        /* New styles for additional boxes */
-        .skill img {
-            border: 1px solid rgb(255, 255, 0); /* Add a border around the image */
-            width: 200px; /* Set a specific width for the image */
-            height: 150px; /* Set a specific height for the image */
-            position: relative;
-        }
-
-        .line-to-img {
-            position: absolute;
-            top: 0; /* Position at the top of the container */
-            left: 50%; /* Position in the middle of the container */
-            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-            height: 100%; /* Adjust the height of the line to cover the entire container */
-            transform: translateX(-50%); /* Center the line horizontally */
-        }
-
-        .skill h3 {
-            border: 1px solid rgb(0, 255, 255); /* Add a border around the heading "User Research" */
-            padding: 5px; /* Optional: Add padding to make the border visible */
-            position: relative;
-        }
-
-        .line-to-h3 {
-            position: absolute;
-            top: 0; /* Position at the top of the container */
-            left: 50%; /* Position in the middle of the container */
-            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-            height: 100%; /* Adjust the height of the line to cover the entire container */
-            transform: translateX(-50%); /* Center the line horizontally */
-        }
-
-        .skill p {
-            border: 1px solid rgb(255, 0, 255); /* Add a border around the paragraph */
-            padding: 5px; /* Optional: Add padding to make the border visible */
-            position: relative;
-        }
-
-        .line-to-p {
-            position: absolute;
-            top: 0; /* Position at the top of the container */
-            left: 50%; /* Position in the middle of the container */
-            border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
-            height: 100%; /* Adjust the height of the line to cover the entire container */
-            transform: translateX(-50%); /* Center the line horizontally */
-        }
-
-        /* Colored Vertical Lines with Text */
-        .vertical-line {
-            position: absolute;
-            width: 1px;
-            height: 50vh; /* Adjust the height of the lines */
-        }
-
-        .line1 { left: 50px; background-color: rgb(0, 255, 0); top: 100px; }
-        .line2 { left: 150px; background-color: rgb(255, 255, 0); top: 200px; }
-        .line3 { left: 250px; background-color: rgb(0, 255, 255); top: 300px; }
-        .line4 { left: 350px; background-color: rgb(255, 0, 255); top: 400px; }
-        .line5 { left: 450px; background-color: rgba(255, 255, 255, 0); top: -615px; }
-        .line6 { left: 550px; background-color: rgb(0, 0, 255); top: 530px; }
-
-        .line-text {
-            position: absolute;
-            bottom: 0;
-            font-size: 12px; /* Adjust the font size as needed */
-            color: white; /* Text color */
-            padding: 2px;
-            text-align: center;
-            width: 60px; /* Adjust the width of the text container */
-        }
-    </style>
+    <link rel="stylesheet" href="css/MyUXSkills_styles.css">
 </head>
 <body>
     <!-- My UX Skills Section -->
     <section class="my-ux-skills">
+        <!-- HTML comment indicating the use of CSS flex -->
+       <!-- Chris Saylor CSS flex box note!! -->
+        <!-- My UX Skills section coded using CSS flex -->
+
         <!-- Section Header -->
         <h3>My UX Skills</h3>
 
         <!-- Flex Container for Skills -->
-        <div class="skills-container">
+        <div class="flex-container"> <!-- Adding the flex-container class -->
             <!-- Flex Child 1: Skill 1 -->
             <div class="skill">
                 <!-- Skill Image -->
@@ -180,14 +47,13 @@
                 <!-- Skill Description -->
                 <p>My expertise in user research, honed over 12 years as a graphic designer, allows me to deeply understand user behavior. From insightful interviews to usability testing, I ensure a profound connection with the end user, shaping designs that resonate.</p>
             </div>
-        </div> <!-- End of Skills Container -->
+        </div> <!-- End of Flex Container -->
 
         <!-- Line to Flex Container -->
         <div class="line-to-container"></div>
     </section> <!-- End of My UX Skills Section -->
 
-    <!-- Colored Vertical Lines with Text -->
-    <div class="vertical-line line1">
+    <!-- Colored Vertical Lines with Text. this is my annotations turned off  <div class="vertical-line line1">
         <div class="line-text">3 &lt;div&gt; tags</div>
     </div>
     <div class="vertical-line line2">
@@ -206,11 +72,7 @@
         <div class="line-text">&lt;div&gt; tag</div>
     </div>
 
-    <p style="color: white;">note: Annotations in white text. red box=section tag</p>
+    <p style="color: white;">note: Annotations in white text. red box=section tag</p>-->
+   
 </body>
 </html>
-
-
-
-
-
